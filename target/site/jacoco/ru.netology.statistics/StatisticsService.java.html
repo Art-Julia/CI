@@ -11,22 +11,70 @@
 <span class="fc" id="L11">        long current_max_index = 0;</span>
 <span class="fc" id="L12">        long current_max = incomes[0];</span>
 <span class="fc bfc" id="L13" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc bfc" id="L14" title="All 2 branches covered.">            if (current_max &lt;= income) {</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">            if (current_max &lt; income) {</span>
 <span class="fc" id="L15">                current_max = income;</span>
             }
         }
 <span class="fc" id="L18">        return current_max;</span>
     }
-    public long findMin(long[] incomes) {
-<span class="fc" id="L21">        long current_max_index = 0;</span>
-<span class="fc" id="L22">        long current_min = incomes[0];</span>
-<span class="fc bfc" id="L23" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc bfc" id="L24" title="All 2 branches covered.">            if (current_min &gt; income) {</span>
-<span class="fc" id="L25">                current_min = income;</span>
-            }
-        }
-<span class="fc" id="L28">        return current_min;</span>
-    }
+//    public long findMax12_(long[] incomesInBillions) {
+////        long current_max_index = 0;
+//        long current_max = incomesInBillions[0];
+//        for (long income : incomesInBillions) {
+//            if (current_max &lt;= income) {
+//                current_max = income;
+//            }
+//        }
+//        return current_max;
+//    }
+//
+//    public long findMaxMonth(long[] incomesInBillions) {
+////        long current_max_index = 0;
+//        long current_max = incomesInBillions[0];
+//        int maxMonth = 0;
+//        int month = 0;
+//        for (long income : incomesInBillions) {
+//            if (current_max &lt;= income) {
+//                maxMonth++;
+//            }
+//            month = month +1;
+//        }
+//        return maxMonth;
+//    }
+//    public long findMaxIncome(long[] incomesInBillions) {
+////        long current_max_index = 0;
+//        long current_max = 0;
+////        int maxMonth = 0;
+//        int month = 0;
+//        for (long income : incomesInBillions) {
+//            if (current_max &lt;= income) {
+//                current_max = income;
+//            }
+//            month = month +1;
+//        }
+//        return current_max;
+//    }
+//
+//    public long findMax12(long[] incomes) {
+//        long current_max_index = 0;
+////        long current_max = incomes[0];
+//        for (long income : incomes) {
+//            if (current_max_index &lt;=income) {
+//                current_max_index = income;
+//            }
+//        }
+//        return current_max_index;
+//    }
+//    public long findMin(long[] incomes) {
+//        long current_max_index = 0;
+//        long current_min = incomes[0];
+//        for (long income : incomes) {
+//            if (current_min &gt;= income) {
+//                current_min = income;
+//            }
+//        }
+//        return current_min;
+//    }
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
